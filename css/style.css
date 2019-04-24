@@ -1,0 +1,280 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+h1 {
+  font-family: 'Roboto Mono', Arial, sans-serif;
+  font-size: 4em;
+}
+
+h2 {
+  font-family: 'Roboto Mono', Arial, sans-serif;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 400;
+  color: rgba(45, 53, 76, 0.6);
+}
+
+section {
+  padding: 35px 70px;
+}
+
+/* Aux */
+
+.text-align-center {
+  text-align: center;
+}
+
+.padding-top-30 {
+  padding-top: 30px;
+}
+
+
+.round-border {
+  border-radius: 4px;
+  border: 1px solid black;
+  padding: auto 5px;
+}
+
+/* Navigation */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+
+  /*   position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999; */
+}
+
+
+.navigation a {
+  display: inline-block;
+  width: 200px;
+  color: black;
+}
+
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation li a {
+  padding: 10px;
+  width: auto;
+}
+
+.navigation li img {
+  height: 16px;
+}
+
+
+/* Hero */
+.hero {
+  text-align: center;
+  background: url('../img/header/bg-header.svg') no-repeat;
+  background-position: center -759px;
+  font-weight: 700;
+  color: white;
+  padding-bottom: 100px;
+}
+
+.hero p {
+  font-size: 1.3em;
+}
+
+.blue-text {
+  color: #32c3ff;
+}
+
+.blue-button {
+  color: white;
+  padding: 10px 50px;
+  display: inline-block;
+  background: #32c3ff;
+  border-radius: 6px;
+  padding: 28px 140px;
+}
+
+.blue-button:hover {
+  text-decoration: none;
+  background-color: #00b4fe;
+  color: white;
+}
+
+
+.companies {
+  text-align: center;
+  font-size: .6em;
+  padding: 50px 0 24px;
+  border-top: 1px solid rgba(117, 117, 117, 0.363);
+  border-bottom: 1px solid rgba(117, 117, 117, 0.363);
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logos img {
+  filter: grayscale(100);
+  width: 10%;
+  vertical-align: middle;
+}
+
+/* Numbers */
+.numbers article {
+  width: 25%;
+}
+
+.big-text {
+  display: block;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 4em;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.caption {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+
+/* Students proof section */
+.students-proof figure {
+  box-shadow: 0 0 9px 2px #0000002e;
+}
+
+.students-proof img {
+  width: 100%;
+}
+
+.students-proof .img-40 {
+  width: 40%;
+  display: block;
+}
+
+.white-box {
+  background-color: white;
+  box-shadow: 0 0 9px 2px #0000002e;
+  padding: 20px;
+  line-height: 1.3em;
+  color: #F49104;
+}
+
+.white-box p {
+  display: inline-block;
+  color: rgba(45, 53, 76, .8);
+  font-size: .6em;
+  font-style: normal;
+  margin: 0;
+  padding: 3px 0;
+}
+
+
+.underline {
+  text-decoration: underline;
+}
+
+.white-box a {
+  line-height: 1.3em;
+  font-family: 'Roboto';
+  font-weight: 200;
+  font-style: italic;
+  color: #F49104;
+}
+
+/* Why Ironhack */
+
+.why-ironhack article {
+  display: flex;
+  padding: 10px;
+}
+
+.why-ironhack figure {
+  margin-right: 20px;
+}
+
+
+
+
+/* Our courses */
+
+.our-courses {
+  background-color: #f8f8f8;
+}
+
+.our-courses h2 {
+  font-family: 'Roboto Mono';
+  font-size: 2.5em;
+}
+
+.our-courses h3 {
+  font-family: 'Roboto Mono';
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.our-courses article {
+  padding: 20px;
+}
+
+.our-courses .timeline {
+  color: rgba(236, 58, 53, .6);
+  line-height: 1.2em;
+  font-size: 0.9em;
+  text-transform: uppercase;
+
+}
+
+.our-courses .program {
+  color: #2d354c;
+  font-size: 1.7em;
+  font-weight: 500;
+  margin: 4px 0 0;
+}
+
+.our-courses .schedule {
+  color: rgba(45, 53, 76, .4);
+  margin-top: 8px;
+  font-size: .8em;
+}
+
+.white-blue-button {
+  border: 1px solid #32c3ff;
+  border-radius: 6px;
+  color: #32c3ff;
+  padding: 24px 40px;
+  text-align: center;
+  width: 100%;
+  margin-top: 16px;
+  display: block;
+}
+
+.white-blue-button:hover {
+  background: #32c3ff;
+  color: #fff;
+  text-decoration: none;
+  transition: background .3s ease-in-out,
+    color .3s ease-in-out;
+}
+
+.our-courses article:hover {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .08);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background .3s ease-in-out,
+    color .3s ease-in-out;
+}
