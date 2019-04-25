@@ -20,7 +20,8 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300i,400|Roboto:400,500,700" rel="stylesheet">
   <!-- Custom Css -->
   <link rel="stylesheet" href="css/main.css">
-  <script src="https://use.fontawesome.com/3cfbb72749.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!-- Custom Css -->
   <link rel="stylesheet" href="css/style.css">
@@ -31,15 +32,21 @@
   <header class="navigation align-items-center">
     <a href="index.html"><img src="img/header/logo-ironhack.svg" alt="logo-ironhack"></a>
     <nav>
-      <ul>
+      <ul class="desktop-only">
         <li>Cursos<a href="#"><i class="fas fa-chevron-down"></i></a></li>
         <li>Campus<a href="#"><i class="fas fa-chevron-down"></i></a></li>
         <li><a href="#">Apoyo Profesional</a></li>
         <li><a href="#">Antiguos Alumnos</a></li>
         <li><a href="#">Contrata</a></li>
         <li><a href="#"><img src="img/header/spain-flag.jpg" alt="bandera española"></a></li>
-        <li><a class="round-border" href="#">Aplicar</a></li>
+        <li class="round-border"><a href="#">Aplicar</a></li>
       </ul>
+
+      <ul class="mobile-only">
+        <li><a href="#"></a>Menu</li>
+        <li><a href="#"></a><i class="fas fa-bars"></i></li>
+      </ul>
+
     </nav>
   </header>
 
@@ -64,24 +71,55 @@
     </header>
 
     <aside class="companies">
-      <p>Nuestros estudiantes trabajan en empresas como:</p>
-      <article class="logos">
-        <img src="img/companies/google.png" alt="google-logo">
-        <img src="img/companies/visa.png" alt="visa-logo">
-        <img src="img/companies/twitter.png" alt="twitter-logo">
-        <img src="img/companies/magic-leap.png" alt="magic-leap-logo">
-        <img src="img/companies/rocket-internet.png" alt="rocket-internet-logo">
-        <img src="img/companies/capgemini.png" alt="capgemini-logo">
-        <img src="img/companies/orange.png" alt="orange-logo">
-        <img src="img/companies/mango.png" alt="mango-logo">
-      </article>
+      <header>
+
+        <p>Nuestros estudiantes trabajan en empresas como:</p>
+      </header>
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-3 col-lg-1">
+            <img src="img/companies/google.png" alt="google-logo">
+
+          </div>
+          <div class="col-3 col-lg-1">
+
+            <img src="img/companies/visa.png" alt="visa-logo">
+          </div>
+          <div class="col-3 col-lg-1">
+            <img src="img/companies/twitter.png" alt="twitter-logo">
+
+          </div>
+          <div class="col-3 col-lg-1">
+            <img src="img/companies/magic-leap.png" alt="magic-leap-logo">
+
+          </div>
+          <div class="col-3 col-lg-1">
+            <img src="img/companies/rocket-internet.png" alt="rocket-internet-logo">
+
+          </div>
+          <div class="col-3 col-lg-1">
+            <img src="img/companies/capgemini.png" alt="capgemini-logo">
+
+          </div>
+          <div class="col-3 col-lg-1">
+            <img src="img/companies/orange.png" alt="orange-logo">
+
+          </div>
+          <div class="col-3 col-lg-1">
+
+            <img src="img/companies/mango.png" alt="mango-logo">
+          </div>
+        </div>
+      </div>
+
+
 
     </aside>
 
     <section class="numbers">
       <div class="container">
         <div class="row align-items-center text-align-center justify-content-around">
-          <div class="col-md-3">
+          <div class="col-md-3 ">
             <article>
               <p class="big-text">+2500</p>
               <p class="caption">Estudiantes<br> graduados</p>
@@ -90,7 +128,7 @@
           <div class="col-md-3">
             <article>
               <p class="big-text">9</p>
-              <p class="caption">Campus<br> alrededor del <br>mundo</p>
+              <p class="caption">Campus<br> alrededor del mundo</p>
             </article>
           </div>
           <div class="col-md-3">
@@ -110,20 +148,22 @@
       <section class="students-proof">
 
         <div class="row">
-          <div class="col-md-9">
+          <div class="col-12 col-md-9 order-md-1 order-2">
             <figure>
               <img src="img/students/happy-students.jpg">
             </figure>
           </div>
-          <div class="col-md-3">
+          <div class="col-12 col-md-3 order-md-2 order-1">
             <aside class="white-box">
               <a href="#">
                 <img class="img-40" src="img/students/quote.svg" alt="quote">
-                <quote>La mejor decisión de mi vida. Está en tus manos. Y tengo que admitir que trabajo en la empresa
-                  de
-                  mis sueños.</quote>
-                <p>Diana Alvarez Concepción</p>
-                <p class="underline">Ver más acerca de Diana</p>
+                <div>
+                  <quote>La mejor decisión de mi vida. Está en tus manos. Y tengo que admitir que trabajo en la empresa
+                    de
+                    mis sueños.</quote>
+                  <p>Diana Alvarez Concepción</p>
+                  <p class="underline">Ver más acerca de Diana</p>
+                </div>
               </a>
             </aside>
           </div>
@@ -209,7 +249,7 @@
               tecnologías
               punteras como Angular 2, Express, MongoDB y metodologías ágiles. Ofrecemos estas dos modalidades:</p>
           </div>
-          <div class="col-6 padding-top-30">
+          <div class="col-12 col-md-6 padding-top-30">
             <article>
               <p class="timeline">9 Semanas // Tiempo Completo</p>
               <p class="program">Programa BOOTCAMP</p>
@@ -217,7 +257,7 @@
               <a class="white-blue-button" href="#">más información</a>
             </article>
           </div>
-          <div class="col-6 padding-top-30">
+          <div class="col-12 col-md-6 padding-top-30">
             <article>
               <p class="timeline">24 Semanas // Tiempo Parcial</p>
               <p class="program">Programa Part-Time</p>
@@ -235,7 +275,7 @@
               heurística.
               Aprende UI e IxD para exponer tus ideas usando técnicas de diseño visual e interacción.</p>
           </div>
-          <div class="col-6 padding-top-30">
+          <div class="col-12 col-md-6 padding-top-30">
             <article>
               <p class="timeline">9 Semanas // Tiempo Completo</p>
               <p class="program">Programa BOOTCAMP</p>
@@ -243,7 +283,7 @@
               <a class="white-blue-button" href="#">más información</a>
             </article>
           </div>
-          <div class="col-6 padding-top-30">
+          <div class="col-12 col-md-6 padding-top-30">
             <article>
               <p class="timeline">24 Semanas // Tiempo Parcial</p>
               <p class="program">Programa Part-Time</p>
@@ -262,7 +302,7 @@
               Termina con Machine Learning y aplicando tu aprendizaje con conjuntos de datos reales! Te ofrecemos esto
               de dos maneras:</p>
           </div>
-          <div class="col-6 padding-top-30">
+          <div class="col-12 col-md-6 padding-top-30">
             <article>
               <p class="timeline">9 Semanas // Tiempo Completo</p>
               <p class="program">Programa BOOTCAMP</p>
@@ -270,7 +310,7 @@
               <a class="white-blue-button" href="#">más información</a>
             </article>
           </div>
-          <div class="col-6 padding-top-30">
+          <div class="col-12 col-md-6 padding-top-30">
             <article>
               <p class="timeline">24 Semanas // Tiempo Parcial</p>
               <p class="program">Programa Part-Time</p>
